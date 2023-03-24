@@ -758,3 +758,197 @@ Property part style
     background: var(--orange-soda);
     color: var(--white);
 }
+
+/* ----------------------------- */
+/* ----------fesatures---------- */
+/* -------------------------------- */
+
+.features{
+    background:var(--cultured-1);
+    padding-block: var(--section-padding);
+}
+.fatures-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    gap: 50px 20px;
+}
+.fatures-list li{
+    width: calc(50% - 10px);
+}
+.features-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;  
+    height: 100%;
+    background: var(--white);
+    box-shadow: var(--shadow-2);
+    padding: 40px 15px;
+    border-radius: 12px;
+    gap: 10px;
+}
+.features-card:is(:hover, :focus){
+    background-color: var(--orange-soda);
+}
+.features-card .card-icon{
+    color: var(--orange-soda);
+    background: var(--misty-rose);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fs-4);
+}
+.features-card .card-title{
+    font-size: var(--fs-6);
+    color: var(--dark-jungle-green);
+    font-weight: var(--fw-600);
+    font-family: var(--ff-poppins);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.features-card .card-title:is(:hover, :focus){
+    color: var(--white);
+}
+.features-card .card-btn{
+    position: absolute;
+    bottom: -15px;
+    background: var(--white);
+    color: var(--cadet);
+    font-size: var(--fs-6);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px hsla(219, 56%, 21%, 0.1)
+}
+.features-card .card-btn:is(:hover, :focus){
+    color: var(--orange-soda);
+}
+
+
+/* ----------------------------- */
+/* ----------Blog---------- */
+/* -------------------------------- */
+
+.blog{
+    background: var(--cultured-1);
+    padding-block: var(--section-padding);
+}
+.blog-card{
+    box-shadow: var(--shadow-2);
+}
+
+.blog-card .card-banner{
+    overflow: hidden;
+    aspect-ratio: cover;
+}
+.blog-card .card-banner img{
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-out;
+}
+.blog-card .card-banner img:is(:hover, :focus){
+    transform: scale(1.1);
+}
+.blog-content{
+    padding: 30px 30px;
+    
+}
+.blog-content-top{
+   border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
+   padding-bottom: 20px;
+}
+.blog-content-top .card-meta-list{
+    display: flex;
+    gap: 20px;
+}
+.card-meta-link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--fs-5);
+    padding-bottom: 10px;
+    color: var(--cadet);
+}
+.blog-content ion-icon{
+    color: var(--orange-soda);
+}
+.blog-content-top .blog-title{
+    font-weight: var(--fw-600);
+}
+
+.blog-content-top .blog-title:is(:hover, :focus){
+    color: var(--orange-soda);
+}
+
+.blog-content-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-block: 20px;
+}
+.blog-content-bottom .publish-date{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.blog-content-bottom .read-more-btn{
+    color: var(--orange-soda);
+}
+
+
+/* <!-- ----------------- -->
+<!-- # CTA -->
+<!-- ----------------- --> */
+
+.cta{
+    background: linear-gradient(to bottom, var(--white) 50%, var(--raisin-black-1) 50%);
+    padding-block: var(--section-padding);
+}
+.cta-card{
+    background: var(--orange-soda);
+    padding: 50px 25px;
+    box-shadow: var(--shadow-2);
+}
+.cta-card .card-content{
+    max-width: max-content;
+    margin-inline: auto;
+    margin-bottom: 30px;
+}
+.cta-card .card-title{
+    color: var(--white);
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+.cta-card .card-text{
+    color: var(--white);
+    font-size: var(--fs-5);
+    line-height: 1.8;
+}
+
+.cta-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--black);
+    background: var(--white);
+    box-shadow: var(--shadow-2);
+    border-color: var(--white);
+    margin-inline: auto;
+}
+.cta-btn:is(:hover, :focus){
+    background: none;
+    color: var(--white);
+    border-color: transparent;
+}
+.cta-btn::before{
+    background: var(--black);
+}
