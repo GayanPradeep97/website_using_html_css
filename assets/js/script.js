@@ -30,3 +30,14 @@ for (let i = 0; i < navElemArr.length; i++){
         elemToggleFunc(overlay);
     });
 }
+
+
+/* Header Active status */
+
+const header = document.querySelector("[data-header]");
+
+window.addEventListener("scroll", function() {
+    this.window.scroll > 400 ? header.classList.add("active")
+    : header.classList.remove("active");
+})
+
